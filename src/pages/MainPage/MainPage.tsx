@@ -18,7 +18,7 @@ const MainPage = () => {
         </Text>
         <Text view={"primary"} className={classes.paragraph}>
           <img
-            src="/public/image/mainPage/Рисунок1.png"
+            src="/image/MainPage/Рисунок1.png"
             alt="Рисунок1"
             className={classes.imageFloatRight}
           />
@@ -47,7 +47,7 @@ const MainPage = () => {
         </Text>
 
         <img
-          src="/public/image/mainPage/Рисунок2.jpg"
+          src="/image/MainPage/Рисунок2.jpg"
           alt="Рисунок2"
           className={classes.imageBlock}
         />
@@ -107,7 +107,7 @@ const MainPage = () => {
         </Text>
 
         <img
-          src="/public/image/mainPage/Рисунок3.png"
+          src="/image/MainPage/Рисунок3.png"
           alt="Рисунок3"
           className={classes.imageBlock}
         />
@@ -160,7 +160,7 @@ const MainPage = () => {
           Для навигации просто используйте контекстное меню вверху страницы.
         </Text>
         <img
-          src="/public/image/mainPage/Рисунок4.png"
+          src="/image/MainPage/Рисунок4.png"
           alt="Рисунок4"
           className={classes.imageBlock}
         />

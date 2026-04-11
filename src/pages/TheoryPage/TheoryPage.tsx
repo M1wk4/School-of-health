@@ -11,7 +11,7 @@ import classes from "./TheoryPage.module.scss";
 const fileList: File[] = [
   {
     filePath:
-      "public/files/TheoryPage/Характеристика учебно-методических материалов по тематическим.pdf",
+      "files/TheoryPage/Характеристика учебно-методических материалов по тематическим.pdf",
     fileName: "Характеристика учебно-методических материалов по тематическим",
     fileExtension: "pdf",
     fileDiscription: "",
@@ -19,7 +19,7 @@ const fileList: File[] = [
   },
   {
     filePath:
-      "public/files/TheoryPage/Тематический план образовательной программы.pdf",
+      "files/TheoryPage/Тематический план образовательной программы.pdf",
     fileName: "Тематический план образовательной программы",
     fileExtension: "pdf",
     fileDiscription: "",

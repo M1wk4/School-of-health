@@ -4,7 +4,7 @@ export const lessonsMap: LessonsMap = {
   "1": {
     lessonName: "Понимание болезни: почему нужен гемодиализ?",
     label: "Занятие 1 ",
-    lessonFolder: "public/lessons/lesson1",
+    lessonFolder: "lessons/Lesson1",
     lessonFiles: [
       "Слайд1.JPG",
       "Слайд2.JPG",
@@ -22,7 +22,7 @@ export const lessonsMap: LessonsMap = {
     fileList: [
       {
         filePath:
-          "public/files/Lesson1/Памятка принцип работы гемодиализа.pdf",
+          "files/Lesson1/Памятка принцип работы гемодиализа.pdf",
         fileName:
           "Памятка принцип работы гемодиализа",
         fileExtension: "pdf",
@@ -31,7 +31,7 @@ export const lessonsMap: LessonsMap = {
       },
       {
         filePath:
-          "public/files/Lesson1/Рабочий лист мои вопросы.pdf",
+          "files/Lesson1/Рабочий лист мои вопросы.pdf",
         fileName: "Рабочий лист мои вопросы",
         fileExtension: "pdf",
         fileDiscription: "",
@@ -39,7 +39,7 @@ export const lessonsMap: LessonsMap = {
       },
       {
         filePath:
-          "public/files/Lesson1/Тематическое занятие №1.pdf",
+          "files/Lesson1/Тематическое занятие №1.pdf",
         fileName: "Тематическое занятие №1",
         fileExtension: "pdf",
         fileDiscription: "",

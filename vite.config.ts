@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
+  base: '/School-of-health/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
