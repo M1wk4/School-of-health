@@ -70,7 +70,7 @@ const Carousel = (props: CaruselProps) => {
             <div className={classes.emblaSlide} key={slide}>
               <Image
                 key={index}
-                src={`/${lessonInfo.lessonFolder}/${slide}`}
+                src={`${lessonInfo.lessonFolder}/${slide}`}
                 alt={`${lessonInfo.label} - Слайд ${index + 1}`}
                 style={{ maxWidth: "90%",  borderRadius: "8px" }}
               />
