@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--color-bg-secondary);
+  container-type: inline-size;
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .main {
+    flex: 1;
+    margin: 0 320px;
+    min-width: 320px;
+    background-color: var(--color-bg-default);
+    padding: 25px;
+    display: flex;
+    gap: 10px;
+  }
+
+  @container (max-width: 1400px) {
+    .main {
+      margin: 0 200px;
+    }
+  }
+
+  @container (max-width: 1024px) {
+    .main {
+      margin: 0 100px;
+    }
+  }
+
+  @container (max-width: 768px) {
+    .main {
+      margin: 0 20px;
+    }
+  }
+
+  @container (max-width: 480px) {
+    .main {
+      margin: 0 0px;
+    }
+  }
+}

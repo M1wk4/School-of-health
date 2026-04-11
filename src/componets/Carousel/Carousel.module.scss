@@ -1,0 +1,27 @@
+.container {
+  .embla {
+    overflow: hidden;
+  }
+
+  .emblaContainer {
+    display: flex;
+  }
+
+  .emblaSlide {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      align-items: center;
+      display: flex;
+    }
+  }
+}
