@@ -44,7 +44,7 @@ const Header = () => {
           onlyIcon
           onClick={() => setOpen(!open)}
         />
-        <Text view="primary" weight="semibold"> {checked?.label ?? 'Главная'} </Text>
+        <Text className={classes.text} view="primary" weight="semibold"> {checked?.label ?? 'Главная'} </Text>
       </Layout>
       <ThemeToggler
         view="ghost"

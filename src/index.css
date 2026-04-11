@@ -5,3 +5,8 @@ body {
 body .Modal {
   z-index: 1000 !important;
 }
+
+body .Modal-Window  {
+  max-height: none !important;
+  padding: 5px;
+}

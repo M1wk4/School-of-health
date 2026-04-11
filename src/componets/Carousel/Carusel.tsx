@@ -72,7 +72,7 @@ const Carousel = (props: CaruselProps) => {
                 key={index}
                 src={`${lessonInfo.lessonFolder}/${slide}`}
                 alt={`${lessonInfo.label} - Слайд ${index + 1}`}
-                style={{ maxWidth: "90%",  borderRadius: "8px" }}
+                style={{ maxWidth: "95%", borderRadius: "8px" }}
               />
             </div>
           ))}
@@ -82,18 +82,21 @@ const Carousel = (props: CaruselProps) => {
         <div className={classes.button}>
           <Button
             label="<--"
+            size="s"
             onClick={scrollPrev}
             disabled={!canScrollPrev}
             form="roundBrick"
           />
           <Button
             label="-->"
+            size="s"
             onClick={scrollNext}
             disabled={!canScrollNext}
             form="brickRound"
           />
           <Button
             style={{ margin: "15px" }}
+            size="s"
             onClick={() => setIsModalOpen(!isModalOpen)}
             form="round"
             iconLeft={isModalOpen ? IconCollapse : IconExpand}
@@ -103,7 +106,7 @@ const Carousel = (props: CaruselProps) => {
         {lessonInfo?.lessonFiles?.length && (
           <Badge
             status="normal"
-            size="l"
+            size="m"
             form="round"
             label={`${currentSlide + 1}/${lessonInfo?.lessonFiles?.length}`}
           />
