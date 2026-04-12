@@ -27,7 +27,7 @@ const LessonPage = () => {
     setLessonInfo(lessonsMap[id]);
   }, [id]);
 
-  const getContent = (block: LessonContentBlock) => {
+  const getContent = (block: LessonContentBlock): React.ReactNode => {
     switch (block.type) {
       case "subtitle":
         return (
@@ -42,7 +42,20 @@ const LessonPage = () => {
 
       case "paragraph":
         return (
-          <Text view={"primary"} className={classes.paragraph}>
+          <>
+            <Text view={"primary"} className={classes.paragraph}>
+              {block.text}{" "}
+            </Text>
+            {block?.subText &&
+              block?.subText?.map((item) => {
+                return <> {getContent(item)} </>;
+              })}
+          </>
+        );
+
+      case "formula":
+        return (
+          <Text view={"primary"} className={classes.formula}>
             {block.text}{" "}
           </Text>
         );
@@ -54,6 +67,17 @@ const LessonPage = () => {
               <li>{getContent(item)}</li>
             ))}
           </ol>
+        );
+
+      case "ul":
+        return (
+          <ul className={classes.list}>
+            {block.content.map((item, index) => (
+              <li style={{ color: block?.colors?.[index] }}>
+                {getContent(item)}
+              </li>
+            ))}
+          </ul>
         );
 
       case "presentation":

@@ -21,20 +21,11 @@
     font-weight: 600;
   }
 
-  // .imageFloatRight {
-  //   float: right;
-  //   width: 380px;
-  //   margin-left: 20px;
-  //   margin-bottom: 10px;
-  //   border-radius: 8px;
-  // }
-
-  // .imageBlock {
-  //   display: block;
-  //   max-width: 100%;
-  //   margin: 20px auto;
-  //   border-radius: 8px;
-  // }
+  .formula {
+    margin-bottom: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
 
   .clear {
     clear: both;
@@ -56,7 +47,6 @@
 
 @media (max-width: 768px) {
   .modal {
-    width:100%;
+    width: 100%;
   }
 }
-

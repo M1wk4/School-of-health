@@ -7,10 +7,12 @@ export type LessonsMap = Record<LessonId, Lesson>;
 export type LessonContentBlock =
   | { type: "title"; text: string }
   | { type: "subtitle"; text: string }
-  | { type: "paragraph"; text: string }
-  | { type: "ol";  content: LessonContentBlock[]}
-  | { type: "presentation"}
-  | { type: "files"};
+  | { type: "paragraph"; text: string, subText?: LessonContentBlock[] }
+  | { type: "formula"; text: string }
+  | { type: "ol"; content: LessonContentBlock[]; colors?: string[] }
+  | { type: "ul"; content: LessonContentBlock[]; colors?: string[] }
+  | { type: "presentation" }
+  | { type: "files" };
 
 export type Lesson = {
   lessonName: string;
@@ -18,5 +20,5 @@ export type Lesson = {
   lessonFiles?: string[];
   lessonFolder?: string;
   content?: LessonContentBlock[];
-  fileList?: File[]
+  fileList?: File[];
 };
