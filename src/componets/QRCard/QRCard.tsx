@@ -45,7 +45,7 @@ const QRCard = () => {
         <Card className={classes.qrCode} justify="center">
           <img
             style={{ width: "150px", height: "150px" }}
-            src="src/assets/svg/qr.svg"
+            src="svg/qr.svg"
             alt="QR Code"
           />
           <Text view="primary" align="center" size="xs">
