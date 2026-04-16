@@ -60,7 +60,11 @@ const Carousel = (props: CaruselProps) => {
     return () => {
       emblaApi.off("select", handleSelect);
     };
-  }, [emblaApi, updateButtons, onSelect]);
+  }, [emblaApi, updateButtons, onSelect, lessonInfo]);
+
+  useEffect(() => {
+    setCurrentSlide(0);
+  }, [lessonInfo]);
 
   return (
     <div className={classes.container}>

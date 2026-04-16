@@ -24,6 +24,14 @@
   border-radius: 8px;
 }
 
+.imageFloatLeft {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
 .imageBlock {
   display: block;
   max-width: 100%;
@@ -42,8 +50,24 @@
   color: var(--color-typo-primary);
 }
 
+.qr {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .imageFloatRight {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  .qr {
+    display: none;
+  }
+
+  .imageFloatLeft {
     float: none;
     display: block;
     width: 100%;

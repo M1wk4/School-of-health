@@ -4,8 +4,10 @@ import { Text } from "@consta/uikit/Text";
 import Page from "@/componets/Page/Page";
 
 import classes from "./MainPage.module.scss";
+import QRCard from "@/componets/QRCard/QRCard";
 
 const MainPage = () => {
+
   return (
     <Page
       title={
@@ -41,42 +43,39 @@ const MainPage = () => {
         </Text>
 
         <div className={classes.clear} />
-
+        <div className={classes.qr} > <QRCard /></div>
         <Text view={"primary"} className={classes.subtitle}>
           Что такое «Школа здоровья» и зачем она нужна именно вам
         </Text>
 
-        <img
-          src="image/MainPage/Рисунок2.jpg"
-          alt="Рисунок2"
-          className={classes.imageBlock}
-        />
-
         <Text view={"primary"} className={classes.paragraph}>
+          {" "}
+          <img
+            src="image/MainPage/Рисунок2.jpg"
+            alt="Рисунок2"
+            className={classes.imageFloatLeft}
+          />
           «Школа здоровья» – это не просто лекции. Это государственная форма
           группового обучения пациентов, закреплённая Приказом Минздрава РФ.
           Такие школы уже много лет работают при сахарном диабете, гипертонии,
           бронхиальной астме – и доказали свою эффективность. В России их
-          насчитывается более 15 000.
-        </Text>
-
-        <Text view={"primary"} className={classes.paragraph}>
-          Но есть одна проблема: специализированных школ для пациентов на
-          гемодиализе среди них менее 2%. При том, что потребность в таких
-          программах огромна.
-        </Text>
-
-        <Text view={"primary"} className={classes.italic}>
-          Что даёт обучение в школе здоровья?{" "}
-        </Text>
-
-        <Text view={"primary"} className={classes.paragraph}>
-          Опыт показывает, что пациенты, прошедшие обучение, лучше понимают своё
-          состояние, реже нарушают режим и чувствуют себя увереннее. Они знают,
-          как рассчитать норму жидкости, какие продукты выбрать, как ухаживать
-          за сосудистым доступом и что делать при тревожных симптомах. В
-          результате снижается число осложнений, и качество жизни заметно
-          улучшается.
+          насчитывается более 15 000.{" "}
+          <Text view={"primary"} className={classes.paragraph}>
+            Но есть одна проблема: специализированных школ для пациентов на
+            гемодиализе среди них менее 2%. При том, что потребность в таких
+            программах огромна.
+          </Text>
+          <Text view={"primary"} className={classes.italic}>
+            Что даёт обучение в школе здоровья?{" "}
+          </Text>
+          <Text view={"primary"} className={classes.paragraph}>
+            Опыт показывает, что пациенты, прошедшие обучение, лучше понимают
+            своё состояние, реже нарушают режим и чувствуют себя увереннее. Они
+            знают, как рассчитать норму жидкости, какие продукты выбрать, как
+            ухаживать за сосудистым доступом и что делать при тревожных
+            симптомах. В результате снижается число осложнений, и качество жизни
+            заметно улучшается.
+          </Text>
         </Text>
 
         <Text view={"primary"} className={classes.subtitle}>

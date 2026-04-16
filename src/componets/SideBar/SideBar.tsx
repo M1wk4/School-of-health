@@ -1,17 +1,29 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "@consta/uikit/Button";
 import { Sidebar } from "@consta/uikit/Sidebar";
 import { ModalHeader, ModalLayout } from "@consta/uikit/Modal";
-import { Text } from "@consta/uikit/Text";
 import { List } from "@consta/uikit/ListCanary";
+import type { SideBarList, SideBarItem } from "@/types/sideBar.types";
 
 import classes from "./SideBar.module.scss";
-import { useNavigate } from "react-router-dom";
 
-const getItemLabel = (item: any) => item?.label;
+type SideBarProps = {
+  setOpen: (open: boolean) => void;
+  open: boolean;
+  checked: SideBarItem | undefined;
+  setChecked: (item: SideBarItem) => void;
+};
 
-const items: any[] = [
+
+const getItemLabel = (item: SideBarItem) => item?.label;
+
+const items: SideBarList = [
+  {
+    label: "Главная",
+    link: "/",
+  },
   {
     label: "Теоретико-методические основы и структура программы",
     link: "/theory",
@@ -60,10 +72,9 @@ const items: any[] = [
     label: "Методические материалы для медицинских работников",
     link: "/materials",
   },
-  // { label: "Анкеты для оценки и обратной связи ", link: "/forms" },
 ];
 
-const SideBar = (props: any) => {
+const SideBar = (props: SideBarProps) => {
   const { setOpen, open, checked, setChecked  } = props;
 
   const navigate = useNavigate();
@@ -83,7 +94,7 @@ const SideBar = (props: any) => {
           size="m"
           items={items}
           getItemLabel={getItemLabel}
-          getItemChecked={(item) => checked === item}
+          getItemChecked={(item) => checked ? checked === item : item?.link === '/'}
           onItemClick={(item) => {
             setChecked(item);
             setOpen(false);
@@ -97,24 +108,14 @@ const SideBar = (props: any) => {
             navigate(item?.link);
           }}
         />
-        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
           <Button
             onClick={() => setOpen(false)}
             size="s"
             view="primary"
             label="Закрыть"
             width="default"
-          />
-          <Button
-            onClick={() => {
-              setChecked(undefined);
-              setOpen(false);
-              navigate(`/`);
-            }}
-            size="s"
-            view="secondary"
-            label="Вернуться на главную"
-            width="default"
+            style={{ width: '300px' }}
           />
         </div>
       </ModalLayout>

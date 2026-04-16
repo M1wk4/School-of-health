@@ -8,15 +8,16 @@ import { IconSun } from "@consta/icons/IconSun";
 import { IconMoon } from "@consta/icons/IconMoon";
 import { IconLightningBolt } from "@consta/icons/IconLightningBolt";
 import { IconHamburger } from "@consta/icons/IconHamburger";
+import { Text } from "@consta/uikit/Text";
 
 import SideBar from "../SideBar/SideBar";
 
 import { Theme } from "@/types/theme.types";
+import { SideBarItem } from "@/types/sideBar.types";
 
 import { themes } from "@/constants/themes";
 
 import classes from "./Header.module.scss";
-import { Text } from "@consta/uikit/Text";
 
 const getItemIcon = (item: Theme) => {
   if (item === "Default") {
@@ -30,7 +31,7 @@ const getItemIcon = (item: Theme) => {
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const [checked, setChecked] = useState<any>(undefined);
+  const [checked, setChecked] = useState<SideBarItem | undefined>(undefined);
 
   const { valueTheme, setValueTheme } = useAppContext();
 

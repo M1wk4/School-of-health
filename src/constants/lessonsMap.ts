@@ -412,6 +412,7 @@ export const lessonsMap: LessonsMap = {
       "Слайд9.JPG",
       "Слайд10.JPG",
       "Слайд11.JPG",
+      "Слайд12.JPG",
     ],
     fileList: [
       {
@@ -585,6 +586,7 @@ export const lessonsMap: LessonsMap = {
       "Слайд9.JPG",
       "Слайд10.JPG",
       "Слайд11.JPG",
+      "Слайд12.JPG",
     ],
     fileList: [
       {
@@ -738,6 +740,9 @@ export const lessonsMap: LessonsMap = {
       "Слайд9.JPG",
       "Слайд10.JPG",
       "Слайд11.JPG",
+      "Слайд12.JPG",
+      "Слайд13.JPG",
+      "Слайд14.JPG",
     ],
     fileList: [
       {
@@ -900,7 +905,6 @@ export const lessonsMap: LessonsMap = {
       "Слайд8.JPG",
       "Слайд9.JPG",
       "Слайд10.JPG",
-      "Слайд11.JPG",
     ],
     fileList: [
       {
@@ -1105,8 +1109,6 @@ export const lessonsMap: LessonsMap = {
       "Слайд7.JPG",
       "Слайд8.JPG",
       "Слайд9.JPG",
-      "Слайд10.JPG",
-      "Слайд11.JPG",
     ],
     fileList: [
       {
