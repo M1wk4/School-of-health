@@ -8,6 +8,7 @@ import { Modal } from "@consta/uikit/Modal";
 import Page from "@/componets/Page/Page";
 import Carousel from "@/componets/Carousel/Carusel";
 import DownloadCard from "@/componets/DownloadCard/DownloadCard";
+import PreviewCard from "@/componets/PreviewCard/PreviewCard";
 
 import { Lesson, LessonContentBlock } from "@/types/lesson.types";
 
@@ -89,8 +90,12 @@ const LessonPage = () => {
           />
         );
 
+      case "preview":
+        return <PreviewCard previewList={lessonInfo?.previewList} />;
+
       case "files":
         return <DownloadCard fileList={lessonInfo?.fileList} />;
+
       default:
         return null;
     }

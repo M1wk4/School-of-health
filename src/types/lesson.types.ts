@@ -12,6 +12,7 @@ export type LessonContentBlock =
   | { type: "ol"; content: LessonContentBlock[]; colors?: string[] }
   | { type: "ul"; content: LessonContentBlock[]; colors?: string[] }
   | { type: "presentation" }
+  | { type: "preview" }
   | { type: "files" };
 
 export type Lesson = {
@@ -21,4 +22,5 @@ export type Lesson = {
   lessonFolder?: string;
   content?: LessonContentBlock[];
   fileList?: File[];
+  previewList?: string[]; 
 };

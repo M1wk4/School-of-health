@@ -64,7 +64,11 @@ const Carousel = (props: CaruselProps) => {
 
   useEffect(() => {
     setCurrentSlide(0);
-  }, [lessonInfo]);
+
+    if (emblaApi) {
+      emblaApi.scrollTo(0);
+    }
+  }, [lessonInfo, emblaApi]);
 
   return (
     <div className={classes.container}>

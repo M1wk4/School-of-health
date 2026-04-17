@@ -65,6 +65,13 @@ const fileList: File[] = [
     fileDiscription: "",
     fileSize: "187 КБ",
   },
+  {
+    filePath: "files/MaterialsPage/Анкета обратной связи.pdf",
+    fileName: "Анкета обратной связи",
+    fileExtension: "pdf",
+    fileDiscription: "",
+    fileSize: "85 КБ",
+  },
 ];
 
 const MaterialsPage = () => {

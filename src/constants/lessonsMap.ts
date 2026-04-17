@@ -19,6 +19,10 @@ export const lessonsMap: LessonsMap = {
       "Слайд11.JPG",
       "Слайд12.JPG",
     ],
+    previewList: [
+      "image/Lesson1/Памятка Принцип работы гемодиализа_page-0001.jpg",
+      "image/Lesson1/Рабочий лист Мои вопросы_page-0001.jpg",
+    ],
     fileList: [
       {
         filePath: "files/Lesson1/Памятка Принцип работы гемодиализа.pdf",
@@ -107,6 +111,9 @@ export const lessonsMap: LessonsMap = {
         text: "Рабочий лист «Мои вопросы» – сюда записывайте всё, что хотите спросить у врача или медсестры.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -128,6 +135,10 @@ export const lessonsMap: LessonsMap = {
       "Слайд10.JPG",
       "Слайд11.JPG",
       "Слайд12.JPG",
+    ],
+    previewList: [
+      "image/Lesson2/Памятка-алгоритм Контроль жидкости за 4 шага_page-0001.jpg",
+      "image/Lesson2/Рабочий лист Калькулятор жидкости_page-0001.jpg",
     ],
     fileList: [
       {
@@ -260,6 +271,9 @@ export const lessonsMap: LessonsMap = {
         text: "Памятка-алгоритм «Контроль жидкости за 4 шага» – пошаговая инструкция с примерами.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -280,6 +294,10 @@ export const lessonsMap: LessonsMap = {
       "Слайд9.JPG",
       "Слайд10.JPG",
       "Слайд11.JPG",
+    ],
+    previewList: [
+      "image/Lesson3/Шаблон Моё меню на день_page-0001.jpg",
+      "image/Lesson3/Набор карточек Светофор продуктов_page-0001.jpg",
     ],
     fileList: [
       {
@@ -392,6 +410,9 @@ export const lessonsMap: LessonsMap = {
         text: "Шаблон «Моё меню на день» – бланк, чтобы планировать безопасное питание.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -438,6 +459,10 @@ export const lessonsMap: LessonsMap = {
         fileDiscription: "",
         fileSize: "878 КБ",
       },
+    ],
+    previewList: [
+      "image/Lesson4/Памятка-алгоритм Ежедневный осмотр сосудистого доступа_page-0001.jpg",
+      "image/Lesson4/Иллюстративная схема Виды доступа и точки осмотра_page-0001.jpg",
     ],
     content: [
       {
@@ -566,6 +591,9 @@ export const lessonsMap: LessonsMap = {
         text: "Иллюстративная схема «Виды доступа и точки осмотра» (наглядное изображение).",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -587,6 +615,10 @@ export const lessonsMap: LessonsMap = {
       "Слайд10.JPG",
       "Слайд11.JPG",
       "Слайд12.JPG",
+    ],
+    previewList: [
+      "image/Lesson5/Памятка Мои лекарства_page-0001.jpg",
+      "image/Lesson5/Карточки-напоминалки_page-0001.jpg",
     ],
     fileList: [
       {
@@ -720,6 +752,9 @@ export const lessonsMap: LessonsMap = {
         text: "Карточки-напоминалки с пиктограммами – краткие правила для каждой группы.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -767,6 +802,10 @@ export const lessonsMap: LessonsMap = {
         fileDiscription: "",
         fileSize: "1.6 МБ",
       },
+    ],
+    previewList: [
+      "image/Lesson6/Памятка Правила измерения артериального давления_page-0001.jpg",
+      "image/Lesson6/Таблица артериального давления_page-0001.jpg",
     ],
     content: [
       {
@@ -886,6 +925,9 @@ export const lessonsMap: LessonsMap = {
         text: "Шаблон «Таблица моего артериального давления» на неделю.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -928,6 +970,12 @@ export const lessonsMap: LessonsMap = {
         fileDiscription: "",
         fileSize: "1.1 МБ",
       },
+    ],
+    previewList: [
+      "image/Lesson7/Памятка-шпаргалка Как заполнять дневник_page-0001.jpg",
+      "image/Lesson7/Дневник самоконтроля для пациента_page-0001.jpg",
+      "image/Lesson7/Дневник самоконтроля для пациента_page-0002.jpg",
+      "image/Lesson7/Дневник самоконтроля для пациента_page-0003.jpg",
     ],
     content: [
       {
@@ -1091,6 +1139,9 @@ export const lessonsMap: LessonsMap = {
         text: "Памятка-шпаргалка «Как заполнять дневник» – краткие правила под рукой.",
       },
       {
+        type: "preview",
+      },
+      {
         type: "files",
       },
     ],
@@ -1112,7 +1163,8 @@ export const lessonsMap: LessonsMap = {
     ],
     fileList: [
       {
-        filePath: "files/Lesson8/Итоговая сводная памятка Мой план здоровья.pdf",
+        filePath:
+          "files/Lesson8/Итоговая сводная памятка Мой план здоровья.pdf",
         fileName: "Итоговая сводная памятка Мой план здоровья",
         fileExtension: "pdf",
         fileDiscription: "",
@@ -1125,6 +1177,9 @@ export const lessonsMap: LessonsMap = {
         fileDiscription: "",
         fileSize: "1.1 МБ",
       },
+    ],
+    previewList: [
+      "image/Lesson8/Итоговая сводная памятка Мой план здоровья_page-0001.jpg",
     ],
     content: [
       {
@@ -1282,7 +1337,7 @@ export const lessonsMap: LessonsMap = {
       },
       {
         type: "paragraph",
-        text: "Заполните, пожалуйста, анкету обратной связи – это поможет нам улучшить программу. (ССЫЛКА НА ОПРОС?????)",
+        text: "Заполните, пожалуйста, анкету обратной связи – это поможет нам улучшить программу.",
       },
       {
         type: "subtitle",
@@ -1296,6 +1351,9 @@ export const lessonsMap: LessonsMap = {
       {
         type: "paragraph",
         text: "Бланк «Обратная связь о занятиях Школы здоровья» – анкета для ваших впечатлений.",
+      },
+      {
+        type: "preview",
       },
       {
         type: "files",

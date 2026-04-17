@@ -16,6 +16,7 @@ import classes from "./DownloadCard.module.scss";
 
 type DownloadCardProps = {
   fileList?: File[];
+  text?: string;
 };
 
 const handleDownload = (url: string, name: string) => {
@@ -28,12 +29,12 @@ const handleDownload = (url: string, name: string) => {
 };
 
 const DownloadCard = (props: DownloadCardProps) => {
-  const { fileList } = props;
+  const { fileList, text } = props;
 
   return (
     <Card verticalSpace="xl" horizontalSpace="2xl" border={true}>
       <Text view="primary" weight="bold" className={classes.text}>
-        Файлы для скачивания:{" "}
+        {text || "Файлы для скачивания:"}
       </Text>
       <Grid
         cols={1}
