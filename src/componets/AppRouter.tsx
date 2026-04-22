@@ -7,6 +7,7 @@ import MainPage from "@/pages/MainPage/MainPage";
 import MaterialsPage from "@/pages/MaterialsPage/MaterialsPage";
 import TheoryPage from "@/pages/TheoryPage/TheoryPage";
 import LessonPage from "@/pages/LessonPage/LessonPage";
+import FormsPage from "@/pages/FormsPage/FormsPage";
 
 import AppLayout from "./AppLayout/AppLayout";
 
@@ -20,6 +21,8 @@ const AppRouter = () => {
         <Route path="/lesson/:id" element={<LessonPage />} />
         <Route path="/materials" element={<MaterialsPage />} />
         <Route path="/theory" element={<TheoryPage />} />
+        <Route path="/forms" element={<FormsPage />} />
+
         <Route
           path="*"
           element={

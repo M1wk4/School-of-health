@@ -65,13 +65,6 @@ const fileList: File[] = [
     fileDiscription: "",
     fileSize: "187 КБ",
   },
-  {
-    filePath: "files/MaterialsPage/Анкета обратной связи.pdf",
-    fileName: "Анкета обратной связи",
-    fileExtension: "pdf",
-    fileDiscription: "",
-    fileSize: "85 КБ",
-  },
 ];
 
 const MaterialsPage = () => {
@@ -153,33 +146,9 @@ const MaterialsPage = () => {
 
           <li>
             <Text view={"primary"}>
-              Анкеты для оценки эффективности обучения и обратной связи
-            </Text>
-            <ol className={classes.list}>
-              <li>
-                <Text view={"primary"}>
-                  Анкета входного контроля – для оценки исходного уровня знаний
-                  пациентов (до начала цикла занятий).
-                </Text>
-              </li>
-              <li>
-                <Text view={"primary"}>
-                  {" "}
-                  Анкета выходного контроля – для оценки динамики знаний после
-                  завершения обучения.
-                </Text>
-              </li>
-
-              <li>
-                <Text view={"primary"}>
-                  Анкета обратной связи – для сбора мнения пациентов о программе
-                  и работе ведущего.
-                </Text>
-              </li>
-            </ol>{" "}
-            <Text view={"primary"} className={classes.paragraph}>
-              Все анкеты представлены в формате PDF, готовы к печати и
-              тиражированию.
+              Анкеты для контроля знаний и обратной связи в формате PDF, готовые
+              к печати и тиражированию представлены в соответствующем разделе
+              сайта.
             </Text>
           </li>
 

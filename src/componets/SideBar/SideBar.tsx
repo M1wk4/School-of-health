@@ -72,6 +72,11 @@ const items: SideBarList = [
     label: "Методические материалы для медицинских работников",
     link: "/materials",
   },
+  {
+    label: "Анкеты для контроля знаний и оценки эффективности",
+    link: "/forms",
+  }
+
 ];
 
 const SideBar = (props: SideBarProps) => {
