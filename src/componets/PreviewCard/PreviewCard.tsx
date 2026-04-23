@@ -13,7 +13,7 @@ const PreviewCard = (props: PreviewCardProps) => {
   const { previewList, text } = props;
 
   return (
-    <Card verticalSpace="xl" horizontalSpace="2xl" shadow={false}>
+    <Card verticalSpace="m" horizontalSpace="m" shadow={false} style={{ paddingTop: "0" }}>
       <Grid
         cols={1}
         breakpoints={{

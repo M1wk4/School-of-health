@@ -42,9 +42,34 @@ const LessonPage = () => {
         );
 
       case "paragraph":
+        const parseBold = (text: string) => {
+          const parts = text.split(/<strong>(.*?)<\/strong>/g);
+          return parts.map((part, i) =>
+            i % 2 === 1 ? (
+              <strong key={i} style={{ fontWeight: "bold" }}>
+                {part}
+              </strong>
+            ) : (
+              part
+            ),
+          );
+        };
         return (
           <>
             <Text view={"primary"} className={classes.paragraph}>
+              {parseBold(block.text)}{" "}
+            </Text>
+            {block?.subText &&
+              block?.subText?.map((item) => {
+                return <> {getContent(item)} </>;
+              })}
+          </>
+        );
+
+      case "default":
+        return (
+          <>
+            <Text view={"primary"} className={classes.default}>
               {block.text}{" "}
             </Text>
             {block?.subText &&

@@ -13,7 +13,8 @@ export type LessonContentBlock =
   | { type: "ul"; content: LessonContentBlock[]; colors?: string[] }
   | { type: "presentation" }
   | { type: "preview" }
-  | { type: "files" };
+  | { type: "files" }
+  | { type: "default"; text: string, subText?: LessonContentBlock[]  };
 
 export type Lesson = {
   lessonName: string;

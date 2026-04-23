@@ -7,7 +7,6 @@ import classes from "./MainPage.module.scss";
 import QRCard from "@/componets/QRCard/QRCard";
 
 const MainPage = () => {
-
   return (
     <Page
       title={
@@ -43,7 +42,10 @@ const MainPage = () => {
         </Text>
 
         <div className={classes.clear} />
-        <div className={classes.qr} > <QRCard /></div>
+        <div className={classes.qr}>
+          {" "}
+          <QRCard />
+        </div>
         <Text view={"primary"} className={classes.subtitle}>
           Что такое «Школа здоровья» и зачем она нужна именно вам
         </Text>
@@ -153,8 +155,11 @@ const MainPage = () => {
             Подробные конспекты всех 8 занятий (сценарии, ход занятия, методы
             работы);
           </li>
-          <li>Анкеты для контроля знаний и обратной связи доступны в одноимённом разделе.</li>
         </ul>
+        <Text view={"primary"} className={classes.paragraph}>
+          Анкеты для контроля знаний и обратной связи доступны в одноимённом
+          разделе.{" "}
+        </Text>
         <Text view={"primary"} className={classes.paragraph}>
           Для навигации просто используйте контекстное меню вверху страницы.
         </Text>
